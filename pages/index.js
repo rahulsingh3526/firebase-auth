@@ -24,8 +24,8 @@ onAuthStateChanged(auth, (currentUser)=>{
   try {
     const user =await createUserWithEmailAndPassword(
       auth,
-      registerEmail,
-      registerPassword
+      loginEmail,
+      loginPassword
     )
     console.log(user)
     console.log(auth)
